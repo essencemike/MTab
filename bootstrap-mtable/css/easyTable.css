@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* CSS Document */
+/* ------------- tableBody -------------- */
+.tableBody{
+	margin-bottom:0;
+	font-family:"Courier New", "微软雅黑";
+	/*min-width: 540px;*/
+}
+.tableBody .row{
+	margin-left: 0;
+	margin-right: 0;
+}
+/* ------------- tableBody end ------------- */
+
+/* ------------- tableHeader -------------- */
+.tableHeader{
+	background-color: #4DBEFF;
+	color: #fff;
+}
+.tableHeader .btn-group{
+	padding-top:3px;
+}
+.tableHeader,.tableFooter{
+	padding:5px 10px;
+}
+.tableHeader .search-form .form-group{
+	margin-bottom:0;
+	margin-top:2px;
+}
+.tableHeader .search-form label{
+	font-weight:normal;
+	margin-bottom:0;
+	text-align:right;
+	margin-top:4px;
+	padding-right:0;
+}
+.tableHeader 
+.singleSearch 
+.col-md-5,
+.tableHeader 
+.singleSearch 
+.col-md-6,
+.tableHeader 
+.singleSearch 
+.col-md-1{
+	padding-left: 0;
+	padding-right: 10px;
+} 
+/* .tableHeader h5{
+	color: #fff;
+} */
+/* ------------- tableHeader end ------------- */
+
+/* ------------- tableContent -------------- */
+.tableContent{
+	padding:0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	min-height: 270px;
+/* 	height: 80%; */
+}
+.tableContent th .row{
+	position: relative;
+}
+.tableContent th .th-order{
+	position: absolute;
+	top:0;
+	right:4px;
+	z-index:10;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+}
+.tableContent .col-md-9,
+.tableContent .col-md-3{
+	padding-left: 0;
+}
+.tableContent table{
+	margin-bottom:0;
+	border:2px solid #ddd;
+	border-left:0;
+	border-right:0;
+}
+.tableContent table tr th,.tableContent table tr td{
+	text-align:center;
+	vertical-align:middle !important;
+}
+.tableContent table tr th.orderby{
+	background-color: red;
+	color: #fff;
+}
+.tableContent th .row{
+	margin-left: 0;
+	margin-right: 0;
+}
+.tableContent th .th-label,
+.tableContent th .th-order{
+	cursor: pointer;
+}
+.tableContent tbody tr.active > td{
+	background-color: #2FA4E7 !important;
+	color: #fff;
+}
+.tableContent tbody tr.active > td > a{
+	color: #fff;
+}
+.tableContent 
+table 
+thead 
+.checkbox,
+.tableContent 
+table 
+tbody 
+.checkbox{
+	min-height: 0;
+	margin-bottom: 0;
+	margin-top: -4px;
+}
+.tableContent 
+table 
+tbody 
+.checkbox{
+	margin-left: 15px;
+}
+/* ------------- tableContent end ------------- */
+
+/* ------------- tableFooter -------------- */
+.tableFooter .paginations .pagination{
+	margin: 4px 0 0 0;
+}
+.tableFooter .select-page{
+	float: left;
+	width: 70px;
+	position: relative;
+	min-height: 1px;
+}
+.tableFooter .pageSize{
+	margin-top:4px;
+}
+.tableFooter .row{
+	margin-left: 0;
+	margin-right: 0;
+}
+.tableFooter 
+.row 
+.btn-group{
+	margin-top: 2px;
+}
+.tableFooter 
+.row 
+.btn-group
+button{
+	margin-left: 4px;
+	background-image: none;
+	border-radius: 3px !important;
+}
+.tableFooter 
+.row 
+.my-checkbox{
+	position: relative;
+	width: 30px;
+	display: inline-block;
+	margin-left: 10px;
+}
+.tableFooter 
+.row 
+.my-checkbox 
+input[type='checkbox']{
+	position: absolute;
+	top:50%;
+	margin-top: -8px;
+}
+/* ------------- tableFooter end ------------- */

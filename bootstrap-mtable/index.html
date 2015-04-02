@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>测试easyTable</title>
+		<link rel="stylesheet" href="css/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap/css/bootstrap.theme.cerulean.min.css" />
+		<link rel="stylesheet" href="css/easyTable.css" />
+		<script type="text/javascript" src="js/jquery-1.9.0.min.js" ></script>
+		<script type="text/javascript" src="js/json2.js" ></script>
+		<script type="text/javascript" src="js/MTable.js" ></script>
+		<style>
+			#testTable{
+				width: 1024px;
+				height: 768px;
+				margin: 80px auto;
+			}
+		</style>
+		<script>
+			$(function(){
+				var m = $MTable({
+					id:'testTable',
+					jsonData:'easyTable.json'
+				});
+				
+				$("#refresh").on('click', function(){
+					m.refresh();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="testTable"></div>
+		<button id="refresh">刷新</button>
+	</body>
+</html>
